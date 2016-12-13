@@ -50,6 +50,7 @@
 #projects {
   text-align: center;
   background-color:  #0099cc;
+  overflow: auto;
 }
 #projects a{
   color: white;
