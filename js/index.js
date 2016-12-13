@@ -1,6 +1,5 @@
 $(document).ready(function(){
-  var height = $(window).height();
-  $("section").height(height);
+  $('body').scrollspy({target: ".navbar", offset: 0});
   $("#navigator a").on('click', function(event){
     if (this.hash !== "") {
       event.preventDefault();

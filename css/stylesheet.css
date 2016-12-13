@@ -1,6 +1,7 @@
 #intro {
   color: white;
   background-image: url("../img/network-background.jpg");
+  height: 100vh;
   position: relative;
 }
 .navbar, footer{
@@ -9,7 +10,6 @@
   background-color:	black;
   overflow: auto;
 }
-
 .white {
   color: white;
 }
@@ -25,7 +25,7 @@
 #work {
   text-align: center;
   background-color: #00ccff;
-  overflow: auto;
+  padding-bottom: 20px;
 }
 .embedded {
   background-color:   #3300cc;
@@ -42,7 +42,7 @@
     max-width: auto;
   }
   body {
-    overflow: auto;
+    /*overflow: auto;*/
     display: inline-block;
   }
   .row.content{height: auto;min-height: 100%}
@@ -50,18 +50,15 @@
 #projects {
   text-align: center;
   background-color:  #0099cc;
-  overflow: auto;
+  padding: 20px;
 }
 #projects a{
   color: white;
 }
-#interests {
-  text-align: center;
-  background-color:  #0099cc;
-}
 #contact{
   text-align: center;
   background-color:  #0099cc;
+  padding: 10px;
 }
 .underline {
   text-decoration: underline;
