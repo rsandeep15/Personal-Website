@@ -42,7 +42,7 @@
     max-width: auto;
   }
   body {
-    overflow: hidden;
+    overflow: auto;
     display: inline-block;
   }
   .row.content{height: auto;min-height: 100%}
