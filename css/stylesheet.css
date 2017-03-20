@@ -1,21 +1,20 @@
 #intro {
   color: white;
-  background-image: url("../img/network-background.jpg");
+  background-color: #3366cc;
   height: 100vh;
   position: relative;
 }
 .navbar, footer{
   margin-bottom: 0;
   border-radius: 0;
-  background-color:	black;
-  overflow: auto;
+  background-color:	#3366ff;
 }
 .white {
   color: white;
 }
 .jumbotron {
-  background: #00ccff;
-  opacity: 0.9;
+  background:	#3366cc;
+  opacity: 0.8;
 }
 #name {
   position: absolute;
@@ -24,16 +23,24 @@
 }
 #work {
   text-align: center;
-  background-color: #0099cc;
+  background-color: #336699;
   padding-bottom: 20px;
 }
 .embedded {
-  background-color:   #3300cc;
   padding: 10px;
   margin: 10px;
 }
+.orange {
+  background-color: #f05323;
+}
+.purple {
+  background-color: #3b009d;
+}
+.darkPurple {
+  background-color: #652e8e;
+}
 .embedded-1 {
-  background-color:   #0099ff;
+  background-color: #330099;
   padding: 10px;
   margin: 10px;
 }
@@ -49,7 +56,7 @@
 }
 #projects {
   text-align: center;
-  background-color:  #0099cc;
+  background-color: #3333cc;
   padding: 20px;
 }
 #projects a{
@@ -57,7 +64,7 @@
 }
 #contact{
   text-align: center;
-  background-color:  #0099cc;
+  background-color: #333399;
   padding: 10px;
 }
 .underline {

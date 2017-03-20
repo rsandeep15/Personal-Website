@@ -40,13 +40,13 @@
     </div>
   </nav>
   <section id="intro">
-    <div class="container-fluid text-center">
-      <div class="row-fluid content">
-        <div class="col-sm-12 jumbotron" id="name">
-          <h1>Sandeep Raghunandhan</h1>
-          <p>Computer Engineering Student at UC San Diego</p>
+    <div class="container-fluid">
+        <div class="jumbotron" id="name">
+          <div class="container-fluid">
+          <h1 class="dispay-3">Sandeep Raghunandhan</h1>
+          <p class="lead">Computer Engineering Student at UC San Diego</p>
         </div>
-      </div>
+        </div>
     </div>
   </div>
 </section>
@@ -55,99 +55,113 @@
     <div class="row-fluid content">
       <h1>Work Experience</h1>
       <div class="col-md-6">
-        <div class="embedded jumbotron panel">
+        <div class="embedded jumbotron panel darkPurple">
           <div class="panel-body">
-            <h2>Shutterfly Inc.</h2>
+            <h2>Zenbanx</h2>
+            <h4>Software Engineering Intern | Summer 2015</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="embedded jumbotron panel orange">
+          <div class="panel-body">
+            <h2>Shutterfly</h2>
             <h4>QA Engineering Intern | Summer 2016</h4>
-            <ul align="left">
-              <li>Wrote automation tests for Photos and Media Services API with TestNG</li>
-              <li>Made changes to existing tests to be compatible in the production environment</li>
-              <li>Produced a Grafana board comparing Google Photos upload time with Shutterfly's</li>
-              <li>Explored the basics of computer vision with OpenCV and created C++ application
-                to blur an image in 5 different ways.
-              </li>
-              <ul>
-              </div>
-            </div>
           </div>
-          <div class="col-md-6">
-            <div class="embedded jumbotron panel">
-              <div class="panel-body">
-                <h2>Zenbanx Ltd.</h2>
-                <h4>Software Engineering Intern | Summer 2015</h4>
-                <ul align="left">
-                  <li>Developed a Meteor.js application to monitor banking transactions in a Mongo Collection</li>
-                  <li>Displayed anonymized transactions in a reactive table controlled by AngularJS which
-                    allowed users to query and filter results</li>
-                    <li>Used Node.js to read and write transactions to the database in a robust manner</li>
-                    <li>Application was built to test the viability of migrating parts of the company's data
-                      to a NoSQL solution</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="embedded jumbotron panel purple">
+          <div class="panel-body">
+            <h2>Yahoo!</h2>
+            <h4>Incoming Software Engineering Intern | Summer 2017</h4>
           </div>
-        </section>
-        <section id="projects" class="white">
-          <div class="container-fluid">
-            <div class="row-fluid content">
-              <h1>Projects</h1>
-              <div class="col-sm-6">
-                <div class="embedded-1 jumbotron">
-                  <a href="https://www.notereview.org">
-                    <img class="col-sm-12" src="img/notereview.png" alt= "notereview"></img>
-                  </a>
-                  <b>Built on: HTML/CSS, JQuery, React.js, Python, Google Firebase, AWS</b>
-                  <p align="left">
-                    A web application for real estate investors to track the loan notes they have invested in.
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="embedded-1 jumbotron">
-                  <a href="http://www.github.com/rsandeep15/MorseBot">
-                    <img class="col-sm-12" src="img/morsebot.png" alt= "morsebot"></img>
-                  </a>
-                  <b>Built on: HTML/CSS, JQuery, Python, MongoDB, Node.js</b>
-                  <p align="left">
-                    A group project for the IEEE Quarterly Projects at UCSD developed in Fall 2016. A web application
-                    combined with a Morse straight key attached to a Raspberry Pi allowing two users to communicate with
-                    each other via Morse Code.The project won second place in the IEEE Fall Project Competition at UCSD.
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section id="contact" class="white">
-              <div class="container-fluid row content">
-                <div class="col-sm-12 text-center">
-                  <h1>Contact Me</h1>
-                  <figure>
-                    <img class="rounded img-thumbnail" src="img/Profile.jpg" width="400px" height="400px" alt="Image of Author"/>
-                    <figcaption>Photo Credit: SangamSD</figcaption>
-                  </figure>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="underline">Email:</td>
-                        <td><a href="mailto:saraghun@ucsd.edu" target="_top">saraghun@ucsd.edu</a></td>
-                      </tr>
-                      <tr>
-                        <tr>
-                          <td class="underline">LinkedIn:</td>
-                          <td><a href="https://www.linkedin.com/in/sandeepraghunandhan"><i class="fa fa-linkedin" style="font-size:18px"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td class="underline">Facebook:</td>
-                          <td><a href="https://www.facebook.com/sandeep.raghunandhan"><i class="fa fa-facebook-official" style="font-size:18px"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </section>
-            </body>
-            <footer class="container-fluid text-center white">
-              <p>Thanks for Visiting!</p>
-            </footer>
-            </html>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="white">
+  <div class="container-fluid">
+    <div class="row-fluid content">
+      <h1>Projects</h1>
+      <div class="col-sm-6">
+        <div class="embedded-1 jumbotron">
+          <a href="https://www.notereview.org">
+            <img class="col-sm-12" src="img/notereview.png" alt= "notereview"></img>
+          </a>
+          <div class = "container">
+          <h3>Note Review</h3>
+          <b>Uses HTML/CSS, JQuery, React.js, Python, Google Firebase, AWS</b>
+          <p align="left">
+            A web application for real estate investors to track the loan notes they have invested in.
+            Excel spreadsheets that are uploaded and parsed to give clients advice on whether to hold
+            or sell notes. Built as a summer side project for exploring the features of AWS.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="embedded-1 jumbotron">
+          <a href="http://www.github.com/rsandeep15/MorseBot">
+            <img class="col-sm-12" src="img/morsebot.png" alt= "morsebot"></img>
+          </a>
+          <h3>Morse Bot</h3>
+          <b>Uses HTML/CSS, JQuery, Python, MongoDB, Node.js</b>
+          <p align="left">
+            A group project for the IEEE Quarterly Projects at UCSD developed in Fall 2016. A web application
+            combined with a Morse straight key attached to a Raspberry Pi allowing two users to communicate with
+            each other via Morse Code.The project won second place in the IEEE Fall Project Competition at UCSD.
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="embedded-1 jumbotron">
+          <a href="https://github.com/rsandeep15/YelpPlus">
+            <img class="col-sm-6" src="img/yelp2.png" alt= "yelp++"></img>
+          </a>
+          <div class="container">
+          <h3>Yelp++</h3>
+          <b>Uses Swift 3, Yelp API</b>
+          <p align="left">
+            A project built as part of CodePath iOS University. An app that mimics Yelp using the company's public API.
+            Only difference being that it uses Google Maps instead of Apple Maps.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="white">
+      <div class="container-fluid row content">
+        <div class="col-sm-12 text-center">
+          <h1>Contact Me</h1>
+          <figure>
+            <img class="rounded img-thumbnail" src="img/Profile.jpg" width="400px" height="400px" alt="Image of Author"/>
+            <figcaption>Photo Credit: SangamSD</figcaption>
+          </figure>
+          <table>
+            <tbody>
+              <tr>
+                <td class="underline">Email:</td>
+                <td><a href="mailto:saraghun@ucsd.edu" target="_top">saraghun@ucsd.edu</a></td>
+              </tr>
+              <tr>
+                <tr>
+                  <td class="underline">LinkedIn:</td>
+                  <td><a href="https://www.linkedin.com/in/sandeepraghunandhan"><i class="fa fa-linkedin" style="font-size:18px"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="underline">Facebook:</td>
+                  <td><a href="https://www.facebook.com/sandeep.raghunandhan"><i class="fa fa-facebook-official" style="font-size:18px"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </body>
+    <footer class="container-fluid text-center white">
+      <p>Thanks for Visiting!</p>
+    </footer>
+    </html>
