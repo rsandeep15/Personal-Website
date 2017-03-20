@@ -7,7 +7,7 @@
 .navbar, footer{
   margin-bottom: 0;
   border-radius: 0;
-  background-color:	#3366ff;
+  background-color:	#FFDE00;
 }
 .white {
   color: white;
@@ -22,7 +22,7 @@
 }
 #work {
   text-align: center;
-  background-color: #333399;
+  background-color: #FF9900;
   padding-bottom: 20px;
 }
 .embedded {
@@ -39,7 +39,7 @@
   background-color: #652e8e;
 }
 .embedded-1 {
-  background-color: #647eff;
+  background-color: #7ABA7A;
   padding: 10px;
   margin: 10px;
 }
@@ -48,14 +48,19 @@
     max-width: auto;
   }
   body {
-    /*overflow: auto;*/
     display: inline-block;
   }
   .row.content{height: auto;min-height: 100%}
 }
+p, figcaption, h2, h1{
+  font-family: 'Abel', serif;
+}
+h2, h1 {
+  font-weight: bolder;
+}
 #projects {
   text-align: center;
-  background-color: #3333cc;
+  background-color: #097054;
   padding: 20px;
 }
 #projects a{
@@ -63,14 +68,15 @@
 }
 #contact{
   text-align: center;
-  background-color: #333399;
+  background-color: #B76EB8;
   padding: 10px;
-}
-.underline {
-  text-decoration: underline;
 }
 #contact a {
   color: white;
+}
+.spaced {
+  margin-top: 5vh;
+  padding: 5px;
 }
 figure {
   padding: 10px;
@@ -79,6 +85,7 @@ figure {
 img {
     max-width: 100%;
     height: auto;
+    padding: 4vh;
 }
 .icon {
   font-size: 4vh;
