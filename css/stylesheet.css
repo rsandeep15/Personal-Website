@@ -12,10 +12,7 @@
 .white {
   color: white;
 }
-.blue {
-  color: #FFFFFF;
-}
-a.page-scroll.blue:hover {
+a.page-scroll.white:hover {
   background-color:  #ffff99;
 }
 .jumbotron {
