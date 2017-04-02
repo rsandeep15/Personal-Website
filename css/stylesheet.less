@@ -126,52 +126,6 @@ img {
     height: auto;
     padding: 4vh;
 }
-
-#webkit-img-animation {
-  -webkit-animation-name: rotateImg;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-transform: rotateY(0deg);
-}
-
-#img-animation {
-  animation-name: rotateImg;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  transform: rotateY(0deg);
-}
-
-#mozilla-img-animation {
-  -moz-animation-name: rotateImg;
-  -moz-animation-duration: 2s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  -moz-transform: rotateY(0deg);
-}
-
-#me:hover {
-  #webkit-img-animation;
-  #img-animation;
-  #mozilla-img-animation;
-}
-
-#imgrotation {
-  from {transform: rotateY(0deg)};
-  to {transform: rotateY(360deg)};
-}
-#webkit-img-rotation {
-  from {-webkit-transform: rotateY(0deg)};
-  to {-webkit-transform: rotateY(360deg)};
-}
-
-@keyframes rotateImg {
-  #imgrotation;
-}
-@-webkit-keyframes rotateImg {
-  #webkit-img-rotation;
-}
 .icon {
   font-size: 4vh;
   padding: 10px;
