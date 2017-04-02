@@ -1,20 +1,24 @@
-@bigblue: #3366cc;
-@fuchsia: #996699;
-@orange: #FF9900;
+@introColor: #222831;
+@navColor: #996699;
+@workColor: #393E46;
+@projectsColor: #00ADB5;
 @lightyellow: #FFFF99;
 @shutterflyorange: #F05323;
 @yahoopurple: #3B009D;
 @zenbanxpurple: #652E8E;
+@embeddedColor: #1D7D81;
+@contactColor: #887575;
+@hoverColor: #2980B9;
 #intro {
   color: white;
-  background-color: @bigblue;
+  background-color: @introColor;
   height: 100vh;
   position: relative;
 }
 .navbar, footer{
   margin-bottom: 0;
   border-radius: 0;
-  background-color:	@fuchsia;
+  background-color:	@embeddedColor;
 }
 .white {
   color: white;
@@ -23,7 +27,7 @@ a.page-scroll.white:hover {
   background-color:  @lightyellow;
 }
 .jumbotron {
-  background:	@bigblue;
+  background:	@introColor;
 }
 #name {
   position: absolute;
@@ -32,7 +36,7 @@ a.page-scroll.white:hover {
 }
 #work {
   text-align: center;
-  background-color: @orange;
+  background-color: @workColor;
   padding-bottom: 20px;
 }
 .embedded {
@@ -49,7 +53,7 @@ a.page-scroll.white:hover {
   background-color: @zenbanxpurple;
 }
 .embedded-1 {
-  background-color: #7ABA7A;
+  background-color: @embeddedColor;
   .embedded
 }
 @media screen and (max-width: 767px) {
@@ -69,7 +73,7 @@ h2, h1 {
 }
 #projects {
   text-align: center;
-  background-color: #097054;
+  background-color: @projectsColor;
   padding: 20px;
   a{
     color: white;
@@ -107,10 +111,10 @@ a:hover .overlay {
 
 #contact{
   text-align: center;
-  background-color: #B76EB8;
+  background-color: @contactColor;
   padding: 10px;
   a {
-    color: white;
+    color: black;
   }
 }
 .spaced {
@@ -136,7 +140,7 @@ img {
 }
 .icon:hover {
   font-size: 7vh;
-  color: black;
+  color: @hoverColor;
 }
 footer {
   text-align: center;
