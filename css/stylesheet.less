@@ -147,9 +147,13 @@ img {
   margin-left: 3vh;
   color: white;
 }
-.icon:hover {
+.icon:hover, .icon-first:hover {
   transform: scale(2);
   color: @hoverColor;
+}
+.icon-first {
+  .icon;
+  margin-left: 0vh;
 }
 footer {
   text-align: center;
