@@ -12,7 +12,7 @@
   <script src="js/analytics.js"></script>
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
-  <link href="css/styles.min.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <base target="_blank">
@@ -97,121 +97,9 @@
 <section id="projects" class="white">
   <div class="container-fluid">
     <h1>Projects</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <a href="https://github.com/rtrounday/note-eval-client.git">
-            <div class="container">
-              <img class="col-sm-12" src="img/notereview.png" alt= "notereview"></img>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>Note Review</h2>
-          <p align="left">
-            A web application for real estate investors to track the loan notes they have invested in.
-            Clients upload excel spreadsheets with loan sheet info that are parsed to give clients advice on whether to hold
-            or sell specific notes. Built as a summer side project for exploring the features of AWS.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <div class="container">
-            <a href="http://www.github.com/rsandeep15/MorseBot">
-              <img src="img/morsebot.png" alt= "morsebot"/>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>Morse Bot</h2>
-          <p align="left">
-            A group project for the IEEE Quarterly Projects at UCSD developed in Fall 2016. A web application
-            combined with a Morse straight key attached to a Raspberry Pi allowing two users to communicate with
-            each other via Morse Code.The project won second place in the IEEE Fall Project Competition at UCSD.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <div class="container col-md-6">
-            <a href="https://github.com/rsandeep15/YelpPlus">
-              <img src="img/yelp++.gif" alt= "yelp++"/>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>Yelp++</h2>
-          <p align="left">
-            A project built as part of CodePath iOS University. An app that mimics Yelp using the company's public API.
-            Only difference being that it uses Google Maps instead of Apple Maps.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <div class="container col-md-6">
-            <a href="https://github.com/rsandeep15/Flicks">
-              <img src="img/flicks.gif" alt= "Flicks"/>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>Flicks</h2>
-          <p align="left">
-            Another project built as part of CodePath iOS University. An app to view
-            the latest movies in theaters. The UI was inspired by Yahoo Movies.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <div class="container col-md-6">
-            <a href="https://github.com/LIT-Chorus/EventLIT">
-              <img src="img/eventlit_demo.gif" alt= "eventlit++"></img>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>EventLit</h2>
-          <p align="left">
-            A group project that my team in CSE 110 (a course at UCSD) built over the quarter. The application is for student
-            organizations to share events they are hosting with UCSD students. My primary role in the app was on backend development,
-            in particular, providing a means for organizers to create and edit events, password reset utilities, and fetching
-            a listing of events to display on the feed and explore sections of the app. When creating this application, we followed
-            agile methodologies, with weekly sprints and user stories to hold us developers accountable.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="embedded-1 jumbotron">
-          <div class="container">
-            <a href="https://github.com/rsandeep15/Headlines">
-              <img class="col-sm-12" src="img/headlines.png" alt= "headlines++"></img>
-              <div class="overlay">
-                <div class="text">Click to view on Github</div>
-              </div>
-            </a>
-          </div>
-          <h2>Headlines</h2>
-          <p align="left">
-            A macOS TouchBar Application to view the current headlines on the New York Times. Users can click on
-            each headline to navigate to the corresponding New York Times article on the newspaper's website. The headlines
-            are fetched by using the NewsAPI. Fun fact: I built the application while listening to Drake's song <i>Headlines</i>
-            on repeat.
-          </p>
-        </div>
-      </div>
-    </div>
+    <!-- Rendered via React -->
+    <div id="app"></div>
+    <script src="js/build/app.js"></script>
   </div>
 </section>
 <section id="contact" class="white">
