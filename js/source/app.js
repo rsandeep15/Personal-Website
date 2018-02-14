@@ -43,7 +43,7 @@ var data = [
       "image": "img/yelp++.gif",
       "imageSize": "col-md-6",
       "alt": "yelp++"},
-    {"name": "Note Review",
+    {"name": "Flicks",
       "github": "https://github.com/rsandeep15/Flicks",
       "description": "Another project built as part of CodePath iOS University." +
         " An app to view the latest movies in theaters." +
@@ -55,7 +55,7 @@ var data = [
   [
     {"name": "EventLit",
       "github": "https://github.com/LIT-Chorus/EventLIT",
-      "description": "A group project that my team in CSE 110 (a course at UCSD)"
+      "description": "A group project that my team in CSE 110"
                     + " built over the quarter. The application is for student" +
                     " organizations to share events they are hosting with UCSD students.",
       "image": "img/eventlit_demo.gif",
