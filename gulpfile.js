@@ -6,9 +6,12 @@ var fs = require('fs');
 var minify = require('gulp-uglify');
 var pump = require('pump');
 var envify = require('gulp-envify');
+var babel = require('gulp-babel');
+const webpack = require('webpack-stream');
 
-gulp.task('prod', function() {
+gulp.task('prod', function(cb) {
   process.env.NODE_ENV = 'production';
+  cb();
 });
 
 gulp.task('css', function() {
@@ -18,18 +21,12 @@ gulp.task('css', function() {
     .pipe(gulp.dest("css/"));
 });
 
-let transforms = [
-{
-  transform: "babelify",
-  options: {presets: ["es2015", "react"]}
-}
-];
 var environment = {
   NODE_ENV: 'production'
 };
 gulp.task('browser', function() {
   var stream = gulp.src('./js/source/*.js')
-    .pipe(js.browserify(transforms))
+    .pipe(webpack(require('./webpack.config.js')))
     .pipe(envify(environment))
     .pipe(gulp.dest("./js/build/"));
   return stream;
@@ -42,4 +39,4 @@ gulp.task('compress', function(cb) {
   ], cb);
 });
 
-gulp.task('default', ['prod', 'css', 'browser', 'compress']);
+gulp.task('default', gulp.series(gulp.parallel('prod', 'css', 'browser'), 'compress'));
