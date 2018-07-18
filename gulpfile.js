@@ -1,13 +1,12 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var minifyCSS = require('gulp-csso');
+const cleanCSS = require('gulp-clean-css');
 var js = require('gulp-browser');
-var fs = require('fs');
-var minify = require('gulp-uglify');
+const minify = require('gulp-uglify');
 var pump = require('pump');
-var envify = require('gulp-envify');
-var babel = require('gulp-babel');
+const envify = require('gulp-envify');
 const webpack = require('webpack-stream');
+const del = require('del');
 
 gulp.task('prod', function(cb) {
   process.env.NODE_ENV = 'production';
@@ -17,7 +16,7 @@ gulp.task('prod', function(cb) {
 gulp.task('css', function() {
   return gulp.src('css/*.less')
     .pipe(less())
-    .pipe(minifyCSS())
+    .pipe(cleanCSS())
     .pipe(gulp.dest("css/"));
 });
 
@@ -39,4 +38,10 @@ gulp.task('compress', function(cb) {
   ], cb);
 });
 
-gulp.task('default', gulp.series(gulp.parallel('prod', 'css', 'browser'), 'compress'));
+gulp.task('clean', function(cb) {
+  del(['js/dist', 'css/*.css']);
+  cb();
+});
+
+gulp.task('default',
+gulp.series(gulp.parallel('prod', 'css', 'browser'), 'compress'));
