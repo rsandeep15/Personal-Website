@@ -6,9 +6,8 @@ $(document).ready(function(){
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top - $("#navigator").height()
-      }, 600, function(){
-        window.location.hash = hash;
-      });
+      }, 600);
+      window.location.hash = hash;
     }
-  })
+  });
 });
