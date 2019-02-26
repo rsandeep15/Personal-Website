@@ -40,7 +40,7 @@ var data = [
       "description": "A project built as part of CodePath iOS University. " +
                   "An app that mimics Yelp using the company's public API." +
                   " Only difference being that it uses Google Maps instead of Apple Maps.",
-      "image": "img/yelp++.gif",
+      "image": "img/yelp++.mp4",
       "imageSize": "col-md-6",
       "alt": "yelp++"},
     {"name": "Flicks",
@@ -48,7 +48,7 @@ var data = [
       "description": "Another project built as part of CodePath iOS University." +
         " An app to view the latest movies in theaters." +
         " The UI was inspired by Yahoo Movies.",
-      "image": "img/flicks.gif",
+      "image": "img/flicks.mp4",
       "imageSize": "col-md-6",
       "alt": "flicks"}
   ],
@@ -58,7 +58,7 @@ var data = [
       "description": "A group project that my team in CSE 110"
                     + " built over the quarter. The application is for student" +
                     " organizations to share events they are hosting with UCSD students.",
-      "image": "img/eventlit_demo.gif",
+      "image": "img/eventlit_demo.mp4",
       "imageSize": "col-md-6",
       "alt": "EventLit"},
     {"name": "Headlines",
