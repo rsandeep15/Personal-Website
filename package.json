@@ -35,7 +35,7 @@
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.3",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8",
     "webpack-stream": "^5.0.0"
