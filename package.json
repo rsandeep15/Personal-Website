@@ -18,7 +18,7 @@
   "homepage": "https://github.com/rsandeep15/Personal-Website#readme",
   "devDependencies": {
     "@types/node": "^6.0.114",
-    "ajv": "^6.5.2",
+    "ajv": "^6.12.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
