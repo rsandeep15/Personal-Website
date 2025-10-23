@@ -332,46 +332,92 @@ h4 {
 
 #projects {
   text-align: center;
-  background-color: var(--theme-surface);
-  padding: 20px;
+  background-color: var(--theme-bg);
+  padding: 72px 0 88px;
   border-top: 1px solid var(--theme-border);
-  border-bottom: 1px solid var(--theme-border);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
-#projects a {
-  color: var(--theme-accent);
+#projects .container-fluid {
+  max-width: 1080px;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--overlay-color);
-  overflow: hidden;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s ease;
-  margin-right: 2px;
+#projects h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 48px;
 }
 
-.container {
+#projects .row {
+  margin-bottom: 32px;
+}
+
+#projects .row:last-of-type {
+  margin-bottom: 0;
+}
+
+#projects .col-md-6 {
+  margin-bottom: 24px;
+}
+
+.project-card {
+  display: block;
   position: relative;
+  background: var(--theme-surface-2);
+  border: 1px solid var(--theme-border);
+  border-radius: 18px;
+  padding: 24px;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(8, 12, 20, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  min-height: 100%;
 }
 
-.text {
-  color: #ffffff;
-  font-size: 3vh;
-  position: absolute;
+.project-card:hover,
+.project-card:focus {
+  text-decoration: none;
+  transform: translateY(-6px);
+  box-shadow: 0 24px 40px rgba(10, 14, 22, 0.45);
+  border-color: var(--theme-accent-strong);
+}
+
+.project-media {
+  border-radius: 14px;
   overflow: hidden;
-  opacity: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  word-wrap: break-word;
+  background: var(--theme-surface);
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover .project-media img,
+.project-card:focus .project-media img {
+  transform: scale(1.02);
+}
+
+.project-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card h3 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-card p {
+  color: var(--theme-muted);
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
 }
 
 #contact {

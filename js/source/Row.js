@@ -10,15 +10,13 @@ class Row extends React.Component {
         <Project name={project1.name}
                  description={project1.description}
                  github={project1.github}
-                 imageSize={project1.imageSize}
                  image={project1.image}
                  alt={project1.alt}/>
-       <Project name={project2.name}
-                description={project2.description}
-                github={project2.github}
-                imageSize={project2.imageSize}
-                image={project2.image}
-                alt={project2.alt}/>
+        <Project name={project2.name}
+                 description={project2.description}
+                 github={project2.github}
+                 image={project2.image}
+                 alt={project2.alt}/>
       </div>
     );
   }

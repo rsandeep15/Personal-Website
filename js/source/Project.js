@@ -2,20 +2,17 @@ import React from 'react';
 
 class Project extends React.Component {
   render() {
-    return(
+    return (
       <div className="col-md-6">
-        <div className="embedded-1 jumbotron">
-          <a href={this.props.github}>
-            <div className={"container " + this.props.imageSize}>
-              <img src={this.props.image} alt={this.props.alt}/>
-              <div className="overlay">
-                <div className="text">Click to view on Github</div>
-              </div>
-            </div>
-          </a>
-          <h2>{this.props.name}</h2>
-          <p id="left">{this.props.description}</p>
-        </div>
+        <a className="project-card" href={this.props.github}>
+          <div className="project-media">
+            <img src={this.props.image} alt={this.props.alt} />
+          </div>
+          <div className="project-content">
+            <h3>{this.props.name}</h3>
+            <p>{this.props.description}</p>
+          </div>
+        </a>
       </div>
     );
   }

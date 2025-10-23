@@ -16,20 +16,14 @@ class Projects extends React.Component {
 var data = [
   [{ "name": "Note Review",
     "github": "https://github.com/rtrounday/note-eval-client.git",
-    "description": "A web application for real estate investors to track the "
-    + "loan notes they have invested in. Clients upload excel spreadsheets with " +
-    "loan sheet info that are parsed to give clients advice on whether to hold " +
-    "or sell specific notes. Built as a summer side project for exploring the features of AWS.",
+    "description": "AWS-backed dashboard that ingests loan spreadsheets and flags which notes investors should hold or sell.",
     "image": "img/notereview.png",
     "imageSize": "col-sm-12",
     "alt": "notereview"
   },
   { "name": "Morse Bot",
     "github": "http://www.github.com/rsandeep15/MorseBot",
-    "description": "A project that allows two users, one on a web application" +
-    " and the other on a Morse straightkey (build using a Raspberry Pi), to" +
-    " communicate with each other in Morse code. " + "This group project won second" +
-    " prize at the IEEE Fall Quarterly Projects at UC San Diego.",
+    "description": "Raspberry Pi-powered Morse straight key that chats with a companion web app; won 2nd place at IEEE UCSD.",
     "image": "img/morsebot.png",
     "imageSize": "col-sm-12",
     "alt": "morsebot"
@@ -37,17 +31,13 @@ var data = [
   [
     {"name": "Yelp++",
       "github": "https://github.com/rsandeep15/YelpPlus",
-      "description": "A project built as part of CodePath iOS University. " +
-                  "An app that mimics Yelp using the company's public API." +
-                  " Only difference being that it uses Google Maps instead of Apple Maps.",
+      "description": "CodePath iOS project recreating Yelp with their public API but swapping in Google Maps.",
       "image": "img/yelp++.gif",
       "imageSize": "col-md-6",
       "alt": "yelp++"},
     {"name": "Flicks",
       "github": "https://github.com/rsandeep15/Flicks",
-      "description": "Another project built as part of CodePath iOS University." +
-        " An app to view the latest movies in theaters." +
-        " The UI was inspired by Yahoo Movies.",
+      "description": "CodePath iOS app for current theater releases with a Yahoo Movies-inspired UI.",
       "image": "img/flicks.gif",
       "imageSize": "col-md-6",
       "alt": "flicks"}
@@ -55,18 +45,13 @@ var data = [
   [
     {"name": "EventLit",
       "github": "https://github.com/LIT-Chorus/EventLIT",
-      "description": "A group project that my team in CSE 110"
-                    + " built over the quarter. The application is for student" +
-                    " organizations to share events they are hosting with UCSD students.",
+      "description": "CSE 110 team project where UCSD student orgs post events and share them with campus.",
       "image": "img/eventlit_demo.gif",
       "imageSize": "col-md-6",
       "alt": "EventLit"},
     {"name": "Headlines",
       "github": "https://github.com/rsandeep15/Headlines",
-      "description": "A macOS TouchBar Application to view the current headlines" +
-                  "on the New York Times. Users can click on each headline to navigate" +
-                  "to the corresponding New York Times article on the newspaper's website. The headlines" +
-                  "are fetched by using the NewsAPI.",
+      "description": "macOS Touch Bar app streaming live New York Times headlines via NewsAPI for quick reads.",
       "image": "img/headlines.png",
       "imageSize": "col-sm-12",
       "alt": "Headlines "}
