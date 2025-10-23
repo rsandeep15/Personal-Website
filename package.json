@@ -27,7 +27,6 @@
     "babelify": "^7.3.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
-    "gulp-clean-css": "^3.9.4",
     "gulp-envify": "^1.0.0",
     "gulp-install": "^1.1.0",
     "gulp-uglify": "^3.0.0",
