@@ -1,7 +1,4 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
-const cleanCSS = require('gulp-clean-css');
-var js = require('gulp-browser');
 const minify = require('gulp-uglify');
 var pump = require('pump');
 const envify = require('gulp-envify');
@@ -11,13 +8,6 @@ const del = require('del');
 gulp.task('prod', function(cb) {
   process.env.NODE_ENV = 'production';
   cb();
-});
-
-gulp.task('css', function() {
-  return gulp.src('css/*.less')
-    .pipe(less())
-    .pipe(cleanCSS())
-    .pipe(gulp.dest("css/"));
 });
 
 var environment = {
@@ -39,9 +29,9 @@ gulp.task('compress', function(cb) {
 });
 
 gulp.task('clean', function(cb) {
-  del(['js/dist', 'css/*.css']);
+  del(['js/dist']);
   cb();
 });
 
 gulp.task('default',
-gulp.series(gulp.parallel('prod', 'css', 'browser'), 'compress'));
+gulp.series(gulp.parallel('prod', 'browser'), 'compress'));
