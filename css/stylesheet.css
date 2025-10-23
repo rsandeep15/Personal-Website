@@ -118,8 +118,8 @@ footer {
 
 .hero-actions {
   margin-top: 28px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap: 16px;
 }
 
@@ -171,6 +171,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: center;
 }
 
 .hero-links li a {
@@ -178,12 +179,17 @@ footer {
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
+  min-height: 48px;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 999px;
   color: rgba(230, 234, 240, 0.86);
   text-decoration: none;
   border: 1px solid transparent;
   transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.hero-links li a i {
+  font-size: 1.15rem;
 }
 
 .hero-links li a:hover,
@@ -195,7 +201,8 @@ footer {
 }
 
 .hero-links span {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -211,8 +218,11 @@ footer {
   }
 
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    gap: 14px;
   }
 
   .hero-btn {
